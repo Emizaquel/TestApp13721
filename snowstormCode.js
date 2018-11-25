@@ -18,7 +18,7 @@ function snowScript(time, wind){
       //   fTop = 0;
       // }
       // elems[i].style.top = (fTop-delyMove) + "%";
-      console.log(elems[i].style.top - 1);
+      console.log(elems[i].style.top);
   }
 
   //setTimeout(snowScript(time), time);
