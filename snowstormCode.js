@@ -66,6 +66,8 @@ function snowScript(time, wind){
       }else if (fOpp < 0.02) {
         fOpp = 0.02;
       }
+
+      elems[i].style.opacity = fOpp;
     }
 
     snowScript(time, wind);
