@@ -22,9 +22,9 @@ function snowScript(time, wind){
       }else if (fTop > 90) {
         fTop = 0;
       }
-      elems[i].style.top = fTop + "%";
+      elems[i].style.top = ceil(fTop) + "%";
 
-      fLeft = parseFloat(elems[i].style.top);
+      fLeft = parseFloat(elems[i].style.left);
       fLeft = (fTop+delxMove);
       if(fTop < 0){
         fLeft = fLeft + 1;
@@ -32,7 +32,7 @@ function snowScript(time, wind){
         fLeft = Math.random()*98;
       }
 
-      elems[i].style.top = fTop + "%";
+      elems[i].style.left = fLeft + "%";
     }
     snowScript(time, wind);
   }, time);
