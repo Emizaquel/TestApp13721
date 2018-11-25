@@ -11,11 +11,11 @@ function snowScript(time, wind){
     var elems = document.getElementsByClassName("flake");
 
     for (var i = 0; i < elems.length; i++) {
-      delSize = Math.random() - 0.5;
-      delxMove = (Math.random()*wind);
+
       delyMove = Math.random()*5 - 2;
 
       fSize = parseFloat(elems[i].style.width);
+      delSize = Math.random() - 0.5;
       fSize = (fSize + delSize);
 
       if(fSize < 0.1){
@@ -38,11 +38,11 @@ function snowScript(time, wind){
       elems[i].style.top = Math.ceil(fTop*100)/100 + "%";
 
       fLeft = parseFloat(elems[i].style.left);
+      delxMove = (Math.random()*wind);
       fLeft = (fTop+delxMove);
       if (fLeft > 98) {
         fLeft = Math.random()*98;
       }
-
       elems[i].style.left = (Math.ceil(fLeft*1000000000)/1000000000) + "%";
     }
 
