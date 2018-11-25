@@ -32,7 +32,7 @@ function snowScript(time, wind){
         fLeft = Math.random()*98;
       }
 
-      elems[i].style.left = fLeft + "%";
+      elems[i].style.left = ceil(fLeft) + "%";
     }
     snowScript(time, wind);
   }, time);
