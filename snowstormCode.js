@@ -9,5 +9,5 @@ function snowScript(time, wind){
      console.log(i);
   }
 
-  setTimeout(snowScript(time), time);
+  //setTimeout(snowScript(time), time);
 }
