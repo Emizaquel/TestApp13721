@@ -45,7 +45,7 @@ function snowScript(time, wind){
         fLeft = Math.random()*98;
       }
 
-      elems[i].style.left = (Math.ceil(fLeft*100000)/100000) + "%";
+      elems[i].style.left = (Math.ceil(fLeft*10000000)/10000000) + "%";
     }
 
 
