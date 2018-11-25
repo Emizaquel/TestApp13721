@@ -12,8 +12,8 @@ function snowScript(time, wind){
 
     for (var i = 0; i < elems.length; i++) {
       delSize = Math.random();
-      delxMove = (Math.random()*wind) - (0.3*wind);
-      delyMove = Math.random()*10 + 7;
+      delxMove = (Math.random()*wind) + (0.7*wind);
+      delyMove = Math.random()*10 - 3;
 
       fTop = parseFloat(elems[i].style.top);
       fTop = (fTop+delyMove);
@@ -34,6 +34,6 @@ function snowScript(time, wind){
 
       elems[i].style.top = fTop + "%";
     }
-    snowScript(time, wind)
+    snowScript(time, wind);
   }, time);
 }
