@@ -39,9 +39,7 @@ function snowScript(time, wind){
 
       fLeft = parseFloat(elems[i].style.left);
       fLeft = (fTop+delxMove);
-      if(fTop < 0){
-        fLeft = fLeft + 1;
-      }else if (fLeft > 98) {
+      if (fLeft > 98) {
         fLeft = Math.random()*98;
       }
 
