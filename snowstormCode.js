@@ -18,9 +18,9 @@ function snowScript(time, wind){
       fSize = parseFloat(elems[i].style.width);
       fSize = (fSize + delSize);
 
-      if(fSize < 1){
+      if(fSize < 0.1){
         fSize = 1;
-      }else if (fSize > 5) {
+      }else if (fSize > 7) {
         fSize = 5;
       }
       fSize = Math.ceil(fSize*1000)/1000;
