@@ -23,9 +23,9 @@ function snowScript(time, wind){
       }else if (fSize > 5) {
         fSize = 5;
       }
-
-      elems[i].style.height = delSize + "px";
-      elems[i].style.width = delSize + "px";
+      fSize = Math.ceil(fSize*1000)/1000);
+      elems[i].style.height = fSize + "px";
+      elems[i].style.width = fSize + "px";
 
 
       fTop = parseFloat(elems[i].style.top);
