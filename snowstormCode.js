@@ -1,4 +1,5 @@
 function scatter(time, wind){
+  var fSize = 0;
   var elems = document.getElementsByClassName("flake");
   for (var i = 0; i < elems.length; i++) {
     fSize = 1 + 4*Math.random();
