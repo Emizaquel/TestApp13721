@@ -2,11 +2,11 @@ function scatter(time, wind){
   var fSize = 0;
   var elems = document.getElementsByClassName("flake");
   for (var i = 0; i < elems.length; i++) {
-    fSize = 1 + 4*Math.random();
+    fSize = 1 + (4*Math.random());
     elems[i].style.height = fSize + "px";
     elems[i].style.width = fSize + "px";
-    elems[i].style.left = Math.random()*98 + "%";
-    elems[i].style.top = Math.random()*90 + "%";
+    elems[i].style.left = (Math.random()*98) + "%";
+    elems[i].style.top = (Math.random()*90) + "%";
     elems[i].style.opacity = Math.random();
   }
   //snowScript(time, wind);
