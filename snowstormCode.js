@@ -1,4 +1,4 @@
-function scatter(time, wind){
+function scatter(){
   var fSize = 0;
   var elems = document.getElementsByClassName("flake");
   for (var i = 0; i < elems.length; i++) {
