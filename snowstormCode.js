@@ -23,7 +23,7 @@ function snowScript(time, wind){
       }else if (fSize > 5) {
         fSize = 5;
       }
-      fSize = Math.ceil(fSize*1000)/1000);
+      fSize = Math.ceil(fSize*1000)/1000;
       elems[i].style.height = fSize + "px";
       elems[i].style.width = fSize + "px";
 
