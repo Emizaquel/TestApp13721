@@ -1,4 +1,4 @@
-function scatter(){
+function scatter(time, wind){
   var fSize = 0;
   var elems = document.getElementsByClassName("flake");
   for (var i = 0; i < elems.length; i++) {
@@ -9,7 +9,7 @@ function scatter(){
     elems[i].style.top = (Math.random()*90) + "%";
     elems[i].style.opacity = Math.random()/2 + 0.5;
   }
-  //snowScript(time, wind);
+  snowScript(time, wind);
 }
 
 function snowScript(time, wind){
