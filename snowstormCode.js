@@ -12,7 +12,7 @@ function snowScript(time, wind){
 
     for (var i = 0; i < elems.length; i++) {
       delSize = Math.random() - 0.5;
-      delxMove = ()(Math.random()*wind) + (0.7*wind))*0.01;
+      delxMove = ()(Math.random()*wind) + (0.7*wind))*0.0001;
       delyMove = Math.random()*5 - 2;
 
       fSize = parseFloat(elems[i].style.width);
