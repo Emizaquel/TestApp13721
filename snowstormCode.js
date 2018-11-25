@@ -9,7 +9,7 @@ function scatter(time, wind){
     elems[i].style.top = (Math.random()*90) + "%";
     elems[i].style.opacity = Math.random();
   }
-  snowScript(time, wind);
+  //snowScript(time, wind);
 }
 
 function snowScript(time, wind){
