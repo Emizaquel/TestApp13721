@@ -1,3 +1,15 @@
+function scatter(){
+  var elems = document.getElementsByClassName("flake");
+  for (var i = 0; i < elems.length; i++) {
+    fSize = 1 + 4*Math.random();
+    elems[i].style.height = fSize + "px";
+    elems[i].style.width = fSize + "px";
+    elems[i].style.left = Math.random()*98 + "%";
+    elems[i].style.top = Math.random()*90 + "%";
+    elems[i].style.opacity = Math.random();
+  }
+}
+
 function snowScript(time, wind){
   setTimeout(function () {
     var delSize = 0;
@@ -18,7 +30,7 @@ function snowScript(time, wind){
       delSize = Math.random() - 0.5;
       fSize = (fSize + delSize);
 
-      if(fSize < 0.1){
+      if(fSize < 1){
         fSize = 1;
       }else if (fSize > 4) {
         fSize = 4;
