@@ -13,7 +13,7 @@ function snowScript(time, wind){
     for (var i = 0; i < elems.length; i++) {
       delSize = Math.random() - 0.5;
       delxMove = (Math.random()*wind) + (0.7*wind);
-      delyMove = Math.random()*10 - 3;
+      delyMove = Math.random()*5 - 2;
 
       fSize = parseFloat(elems[i].style.width);
       fSize = (fSize + delSize);
@@ -35,7 +35,7 @@ function snowScript(time, wind){
       }else if (fTop > 90) {
         fTop = 0;
       }
-      elems[i].style.top = Math.ceil(fTop) + "%";
+      elems[i].style.top = Math.ceil(fTop*100)/100 + "%";
 
       fLeft = parseFloat(elems[i].style.left);
       fLeft = (fTop+delxMove);
