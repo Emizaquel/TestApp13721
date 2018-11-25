@@ -1,15 +1,15 @@
 function snowScript(time, wind){
+  setTimeout(function () {
+    var delSize = 0;
+    var delxMove = 0;
+    var delyMove = 0;
+    var fTop = 0;
+    var fLeft = 0;
+    var fSize = 0;
+    var fOpp = 1;
 
-  var delSize = 0;
-  var delxMove = 0;
-  var delyMove = 0;
-  var fTop = 0;
-  var fLeft = 0;
-  var fSize = 0;
-  var fOpp = 1;
-  while (true) {
     var elems = document.getElementsByClassName("flake");
-    
+
     for (var i = 0; i < elems.length; i++) {
       delSize = Math.random();
       delxMove = (Math.random()*wind) - (0.3*wind);
@@ -33,5 +33,7 @@ function snowScript(time, wind){
       }
 
       elems[i].style.top = fTop + "%";
-  }
+    }
+    snowScript(time, wind)
+  }, time);
 }
