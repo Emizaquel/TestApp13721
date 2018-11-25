@@ -6,7 +6,7 @@ function snowScript(time, wind){
   var textBoxes = document.querySelectorAll('[id^=flake]');
   var textToWrite;
   for(var i in textBoxes){
-     console.log(i);
+     console.log(textBoxes[i].keys);
   }
 
   //setTimeout(snowScript(time), time);
