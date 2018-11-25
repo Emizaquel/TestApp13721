@@ -59,6 +59,13 @@ function snowScript(time, wind){
       elems[i].style.left = (Math.ceil(fLeft*1000000000)/1000000000) + "%";
     }
 
+    fOpp = elems[i].style.opacity + (Math.ceil(Math.random() * 10))/10 - 0.05;
+
+    if(fOpp > 1){
+      fOpp = 1;
+    }else if (fOpp < 0.02) {
+      fOpp = 0.02;
+    }
 
 
     snowScript(time, wind);
