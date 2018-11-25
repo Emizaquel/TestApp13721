@@ -7,7 +7,7 @@ function scatter(time, wind){
     elems[i].style.width = fSize + "px";
     elems[i].style.left = (Math.random()*98) + "%";
     elems[i].style.top = (Math.random()*90) + "%";
-    elems[i].style.opacity = Math.random();
+    elems[i].style.opacity = Math.random()/2 + 0.5;
   }
   //snowScript(time, wind);
 }
@@ -58,16 +58,6 @@ function snowScript(time, wind){
         fLeft = Math.random()*98;
       }
       elems[i].style.left = (Math.ceil(fLeft*1000000000)/1000000000) + "%";
-
-      fOpp = elems[i].style.opacity + ((Math.ceil( (Math.random()) * 100))/1000) - 0.05;
-
-      if(fOpp > 1){
-        fOpp = 1;
-      }else if (fOpp < 0.02) {
-        fOpp = 0.02;
-      }
-
-      elems[i].style.opacity = fOpp;
     }
 
     snowScript(time, wind);
