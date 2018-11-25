@@ -36,5 +36,5 @@ function snowScript(time, wind){
 
   }
 
-  //setTimeout(snowScript(time), time);
+  setTimeout(snowScript(time), time);
 }
