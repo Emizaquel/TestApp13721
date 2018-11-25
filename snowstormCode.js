@@ -11,9 +11,22 @@ function snowScript(time, wind){
     var elems = document.getElementsByClassName("flake");
 
     for (var i = 0; i < elems.length; i++) {
-      delSize = Math.random();
+      delSize = Math.random() - 0.5;
       delxMove = (Math.random()*wind) + (0.7*wind);
       delyMove = Math.random()*10 - 3;
+
+      fSize = parseFloat(elems[i].style.width);
+      fSize = (fSize + delSize);
+
+      if(fSize < 1){
+        fSize = 1;
+      }else if (fSize > 5) {
+        fSize = 5;
+      }
+
+      elems[i].style.height = delSize + "px";
+      elems[i].style.width = delSize + "px";
+
 
       fTop = parseFloat(elems[i].style.top);
       fTop = (fTop+delyMove);
@@ -34,6 +47,9 @@ function snowScript(time, wind){
 
       elems[i].style.left = (Math.ceil(fLeft*1000)/1000) + "%";
     }
+
+
+
     snowScript(time, wind);
   }, time);
 }
