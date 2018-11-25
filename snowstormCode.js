@@ -1,3 +1,3 @@
-function snowScript(){
-  console.log("0");
+function snowScript(elem){
+  console.log(elem);
 }
